@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import Timeline from './components/Timeline';
 import './App.css';
+import Posts from './components/Posts';
+import Suggestion from './components/Suggestion';
+import Story from './components/Story';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+  <div className="story">
+    <Story/>
+   
+   </div>
+    
+      <div className='insta' >
+        <div className='timeline'><Timeline/></div>
+        <div className='post'><Posts fetchURL="https://fakestoreapi.com/products "/></div>
+     <div className='suggestion'>   <Suggestion/></div>
+      </div>
+  </>
   );
-}
+  }
 
 export default App;
