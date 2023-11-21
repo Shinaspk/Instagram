@@ -36,7 +36,7 @@ function Posts() {
                         </div>
 
 
-                        <div className="footer mb-5 d-flex   " style={{ marginLeft: "60px" }}>
+                        <div className="footer mb-5 d-flex   " style={{ marginLeft: "10px" }}>
                             <div ><i class="fa-regular fa-heart"></i></div>
                             <div className='ms-2'> <i class="fa-regular fa-comment"></i></div>
                             <div className='ms-2'>
